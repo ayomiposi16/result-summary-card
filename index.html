@@ -32,6 +32,7 @@
       display: flex;
       flex-direction: row;
       align-items: stretch;
+      flex-wrap: wrap;
     }
 
     .Purple {
@@ -151,7 +152,20 @@
       margin-bottom: 30px;
     }
 
+    @media (max-width: 768px) {
+      .body {
+        height: 100%;
+      }
 
+      .Purple {
+        width: 100%;
+      }
+
+      .Summary{
+        max-width: 100%;
+        width: 100%;
+      }
+    }
   </style>
 </head>
 
